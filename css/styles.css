@@ -1,0 +1,78 @@
+/* <![CDATA[ */
+    
+    HTML, BODY {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Helvetica Neue", Helvetica, Arial;
+        font-size: 14px;
+        text-align: center;
+        background-color: #FFF;
+        color: #333;
+    }
+    
+    DIV#container {
+        width: 700px;
+        margin: 20px auto 40px auto;
+        text-align: left;
+    }
+    
+    DIV#forkme {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    
+    DIV#forkme IMG {
+        border: 0px none;
+    }
+    
+    A, A:link {
+        color: #007799;
+        text-decoration: none;
+    }
+    
+    A:hover, A:focus {
+        color: #333;
+        text-decoration: underline;
+    }
+    
+    H1 {
+        font-size: 28px;
+        margin: 0px;
+        margin-bottom: 20px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        text-shadow: #777 1px 1px 6px;
+    }
+    
+    H1 SPAN {
+        letter-spacing: 0px;
+    }
+    
+    H2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    
+    DIV#header {
+        overflow: hidden;
+        border-bottom: 1px solid #333;
+        line-height: 28px;
+    }
+    
+    DIV.spacer {
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    DIV.spacer SPAN {
+        height: 1px;
+        line-height: 1px;
+        display: block;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px dashed #333;
+    }
+    
+/* ]]> */
