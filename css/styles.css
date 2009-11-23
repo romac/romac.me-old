@@ -3,30 +3,16 @@
     HTML, BODY {
         margin: 0px;
         padding: 0px;
-        font-family: "Helvetica Neue", Helvetica, Arial;
-        font-size: 14px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 15px;
         text-align: center;
         background-color: #FFF;
         color: #333;
     }
     
-    DIV#container {
-        width: 700px;
-        margin: 20px auto 40px auto;
-        text-align: left;
-    }
+    A IMG
     
-    DIV#forkme {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-    }
-    
-    DIV#forkme IMG {
-        border: 0px none;
-    }
-    
-    A, A:link {
+    A, A:link, A:visited {
         color: #007799;
         text-decoration: none;
     }
@@ -54,9 +40,27 @@
         margin-bottom: 5px;
     }
     
+    DIV#forkme {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 999;
+    }
+    
+    DIV#forkme IMG {
+        border: 0px none;
+    }
+    
+    DIV#container {
+        width: 940px;
+        height: auto;
+        overflow: hidden;
+        margin: 20px auto 40px auto;
+        text-align: left;
+    }
+    
     DIV#header {
         overflow: hidden;
-        border-bottom: 1px solid #333;
         line-height: 28px;
     }
     
@@ -72,13 +76,21 @@
         width: 300px;
         margin-left: auto;
         margin-right: auto;
-        border-bottom: 1px dashed #333;
     }
     
     DIV#content {
-        border-bottom: 1px solid #333;
         padding-bottom: 20px;
         margin-bottom: 20px;
+        float: left;
+        width: 600px;
+        line-height: 150%;
+    }
+    
+    DIV#about {
+        float: left;
+        width: 300px;
+        margin-left: 30px;
+        z-index: 1;
     }
     
 /* ]]> */
