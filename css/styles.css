@@ -4,10 +4,11 @@
         margin:                 0px;
         padding:                0px;
         font-family:            "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size:              15px;
+        font-size:              1em;
         text-align:             center;
-        background-color:       #FFF;
+        background:             #EEE -webkit-gradient( linear, 0% 0%, 100% 100%, from( #DDD ), to( #EEE ) );
         color:                  #333;
+        text-shadow:            #FFF 0px 1px 1px;
     }
     
     A IMG {
@@ -15,22 +16,24 @@
     }
     
     A, A:link, A:visited {
-        color:                  #007799;
+        /*color:                  #007799;*/
+        color:                  #333;
         text-decoration:        none;
     }
     
     A:hover, A:focus {
         color:                  #333;
-        text-decoration:        underline;
+        text-decoration:        none;
+/*        border-bottom:          1px solid #666;*/
+        text-shadow:            #AAA 2px 2px 6px;
     }
     
     H1 {
-        font-size:              28px;
+        font-size:              2.0em;
         margin:                 0px;
         margin-bottom:          20px;
         font-weight:            normal;
         letter-spacing:         2px;
-        text-shadow:            #777 1px 1px 6px;
     }
     
     H1 A, H1 A:hover, H1 A:focus, H1 A:visited {
@@ -43,7 +46,7 @@
     }
     
     H2 {
-        font-size:              18px;
+        font-size:              1.2em;
         margin-bottom:          5px;
     }
     
@@ -90,6 +93,7 @@
         margin-bottom:          20px;
         float:                  left;
         width:                  600px;
+        font-size:              95%;
         line-height:            150%;
     }
     
