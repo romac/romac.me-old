@@ -17,7 +17,8 @@
     
     A, A:link, A:visited {
         /*color:                  #007799;*/
-        color:                  #333;
+        color:                  #222;
+        font-weight:            500;
         text-decoration:        none;
     }
     
