@@ -65,6 +65,7 @@
     
     #forkme
     {
+        display:                none;
         position:               absolute;
         top:                    0px;
         right:                  0px;
@@ -111,6 +112,8 @@
     #about H2
     {
         margin-bottom:          10px;
+        color:                  #444;
+        font-weight:            600;
     }
     
     #projects
