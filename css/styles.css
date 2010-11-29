@@ -5,7 +5,7 @@
         margin:                 0px;
         padding:                0px;
         font-family:            "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size:              1em;
+        font-size:              15px;
         text-align:             center;
         background:             #EEE -webkit-gradient( linear, 0% 0%, 100% 100%, from( #DDD ), to( #EEE ) );
         background:             #EEE -moz-linear-gradient( top left, #DDD, #EEE );
@@ -34,11 +34,10 @@
     
     H1
     {
-        font-size:              2.0em;
+        font-size:              2.2em;
         margin:                 0px;
-        margin-bottom:          20px;
+        margin-bottom:          15px;
         font-weight:            normal;
-        letter-spacing:         2px;
     }
     
     H1 A, H1 A:hover, H1 A:focus, H1 A:visited
@@ -53,6 +52,12 @@
     }
     
     H2
+    {
+        font-size:              1.2em;
+        margin-bottom:          5px;
+    }
+    
+    H3
     {
         font-size:              1.2em;
         margin-bottom:          5px;
@@ -73,7 +78,7 @@
     
     #container
     {
-        width:                  940px;
+        width:                  960px;
         height:                 auto;
         overflow:               hidden;
         margin:                 20px auto 0 auto;
@@ -83,7 +88,8 @@
     #header
     {
         overflow:               hidden;
-        line-height:            28px;
+        line-height:            1.8em;
+        margin-bottom:          60px;
     }
     
     #content
@@ -98,8 +104,13 @@
     {
         float:                  left;
         width:                  300px;
-        margin-left:            30px;
+        margin-left:            60px;
         z-index:                1;
+    }
+    
+    #about H2
+    {
+        margin-bottom:          10px;
     }
     
     #projects
@@ -111,12 +122,14 @@
     DIV.project {
         width:                  280px;
         margin-right:           40px;
+        margin-bottom:          10px;
         float:                  left;
     }
     
-    DIV.project:nth-child(2n)
+    DIV.project:nth-child(2n+1)
     {
         margin-right:           0;
+        clear:                  right;
     }
     
 /* ]]> */
