@@ -63,20 +63,6 @@
         margin-bottom:          5px;
     }
     
-    #forkme
-    {
-        display:                none;
-        position:               absolute;
-        top:                    0px;
-        right:                  0px;
-        z-index:                999;
-    }
-    
-    #forkme IMG
-    {
-        border:                 0px none;
-    }
-    
     #container
     {
         width:                  960px;
@@ -90,7 +76,7 @@
     {
         overflow:               hidden;
         line-height:            1.8em;
-        margin-bottom:          60px;
+        margin-bottom:          40px;
     }
     
     #content
