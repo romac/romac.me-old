@@ -7,8 +7,7 @@
         font-family:            "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size:              15px;
         text-align:             center;
-        background:             #EEE -webkit-gradient( linear, 0% 0%, 100% 100%, from( #DDD ), to( #EEE ) );
-        background:             #EEE -moz-linear-gradient( top left, #DDD, #EEE );
+        background:             #FFF url( ../img/white_sand.gif ) repeat;
         color:                  #333;
         text-shadow:            #FFF 0px 1px 1px;
     }
@@ -27,9 +26,9 @@
     
     A:hover, A:focus
     {
-        color:                  #333;
-        text-decoration:        none;
-        text-shadow:            #AAA 1px 1px 10px;
+/*        color:                  #0094FF;*/
+        text-decoration:        underline;
+        /*text-shadow:            #AAA 1px 1px 10px;*/
     }
     
     H1
@@ -53,7 +52,7 @@
     
     H2
     {
-        font-size:              1.2em;
+        font-size:              1.4em;
         margin-bottom:          5px;
     }
     
@@ -68,7 +67,7 @@
         width:                  960px;
         height:                 auto;
         overflow:               hidden;
-        margin:                 20px auto 0 auto;
+        margin:                 60px auto 0 auto;
         text-align:             left;
     }
     
@@ -76,7 +75,7 @@
     {
         overflow:               hidden;
         line-height:            1.8em;
-        margin-bottom:          40px;
+        margin-bottom:          20px;
     }
     
     #content
@@ -108,14 +107,14 @@
         overflow:               hidden;
     }
     
-    DIV.project {
+    .project {
         width:                  280px;
         margin-right:           40px;
         margin-bottom:          10px;
         float:                  left;
     }
     
-    DIV.project:nth-child(2n+1)
+    .project:nth-child(2n+1)
     {
         margin-right:           0;
         clear:                  right;
