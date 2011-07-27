@@ -9,17 +9,31 @@
             
             body {
                 background-color:           #EFEFEF;
-                font-family:                Helvetica, Arial, serif;
+                font-family:                Helvetica, Arial, sans-serif;
                 margin:                     0px 0px 0px 0px;
                 padding:                    0px 0px 0px 20px;
-                font-size:                  20px;
+                font-size:                  18px;
                 line-height:                1.5;
-                text-align:                 center;
+                color:                      #333;
             }
             
-            #container {
-                width:                      800px;
-                margin:                     20% auto 0 auto;
+            header {
+                margin-bottom:              50px;
+            }
+            
+            section {
+                background-color:           white;
+                -webkit-border-radius:      10px;
+                -moz-border-radius:         10px;
+                -o-border-radius:           10px;
+                -ms- border-radius:         10px;
+                border-radius:              10px;
+                box-shadow:                 0 1px 3px #CCCCCC;
+                padding:                    20px 30px 15px 30px;
+            }
+            
+            article {
+                margin-top:                 10px;
             }
             
             a {
@@ -27,16 +41,33 @@
             }
             
             a:hover {
-                border-bottom:              1px solid #365ABA;
+                border-bottom:              2px solid #365ABA;
             }
             
-            a, strong, h1, h2 {
+            a, strong, h1, h2, h3 {
                 color:                      #365ABA;
             }
             
-            h1, h2 {
+            h1, h2, h3 {
                 font-family:                Lekton;
-                text-shadow:                0px -1px 0px #FFF;
+                text-shadow:                0px 2px 0px #EEE;
+                margin:                     0;
+            }
+            
+            h1 {
+                font-size:                  3em;
+            }
+            
+            h2 {
+                font-size:                  2em;
+            }
+            
+            h3 {
+                font-size:                  1.5em;
+            }
+            
+            p {
+                margin-top:                 0px;
             }
             
             code {
@@ -49,18 +80,43 @@
             .big {
                 font-size: 1.3em;
             }
+            
+            #container {
+                width:                      800px;
+                margin:                     100px auto 0 auto;
+            }
+            
+            #links {
+                font-family:                Lekton;
+                font-size:                  1.8em;
+                margin-bottom:              25px;
+            }
+            
         </style> 
     </head> 
     <body> 
         <div id="container">
-            <h1>romac — curious web alchemist</h1>
-            <h2>
-                <a href="http://twitter.com/_romac">@_romac</a>
+            <header>
+                <h1>romac — curious web alchemist</h1>
+            </header>
+            <section id="links">
+                <a href="http://twitter.com/_romac">Twitter</a>
                 ·
-                <a href="https://github.com/romac">code</a>
+                <a href="https://github.com/romac">GitHub</a>
                 ·
-                and <a href="http://gplus.to/romac">more</a>
-            </h2>
+                <a href="http://gplus.to/romac">Google+</a>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <article id="mdash">
+                    <h3>
+                        <a href="http://romac.me/mdash/">—dash</a>
+                    </h3>
+                    <p>
+                        A tiny Chrome extension which aims to replace the New Tab page with a light dashboard linked with your bookmarks.
+                    </p>
+                </article>
+            </section>
         </div>
         <script type="text/javascript">
           var _gaq = _gaq || [];
