@@ -1,0 +1,9 @@
+[submodule "voodoo.mk"]
+	path = voodoo.mk
+	url = https://github.com/romac/voodoo.mk.git
+[submodule "mdash"]
+	path = mdash
+	url = https://github.com/romac/mdash.git
+[submodule "node-flick"]
+	path = node-flick
+	url = https://github.com/romac/node-flick.git
