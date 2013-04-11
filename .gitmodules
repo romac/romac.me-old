@@ -7,3 +7,6 @@
 [submodule "node-flick"]
 	path = node-flick
 	url = https://github.com/romac/node-flick.git
+[submodule "alfred-bitcoin-stats"]
+	path = alfred-bitcoin-stats
+	url = https://github.com/romac/Alfred-BitcoinStats.git
