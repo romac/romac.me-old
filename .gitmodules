@@ -10,3 +10,6 @@
 [submodule "alfred-bitcoin-stats"]
 	path = alfred-bitcoin-stats
 	url = https://github.com/romac/Alfred-BitcoinStats.git
+[submodule "node-houdini"]
+	path = node-houdini
+	url = https://github.com/romac/node-houdini
