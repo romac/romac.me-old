@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta charset="UTF-8" />
-        <title>Romac · Romain Ruetschi</title>
+        <title>Romain Ruetschi</title>
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lekton:700&amp;v2" />
         <link rel="stylesheet" href="styles.css" />
@@ -11,7 +11,7 @@
     <body>
         <div id="container">
             <header>
-                <h1>Romac <span>·</span> Romain Ruetschi</h1>
+                <h1>Romain Ruetschi</h1>
             </header>
             <h2>About me</h2>
             <section id="about-me">
@@ -21,6 +21,19 @@
                 <p>
                     I'm a Computer Science student at <a href="http://epfl.ch">EPFL</a> in Lausanne, Switzerland,
                     where I've co-founded <a href="http://www.hackersatepfl.com">Hackers at EPFL</a>.
+                </p>
+                <p>
+                    I'm especially interested in programming languages, functional programming and type theory.
+                    I also care deeply about the Web, its surrounding technologies, and and our right to privacy.
+                </p>
+                <p>
+                    You can reach me by <a href="mailto:romain.ruetschi@gmail.com">e-mail</a>,
+                    on <a href="https://twitter.com/_romac">Twitter</a>,
+                    on <a href="xmpp:romac@jabber.ccc.de">Jabber</a>
+                    (<a class="show" href="#jabber-otr">OTR fingerprint</a>).
+                </p>
+                <p id="jabber-otr" class="hide">
+                    <strong>OTR fingerprint</strong> (romac@jabber.ccc.de):<br />33523C35 DEE2BCF9 B02E5D59 98FEBB69 44DDEC9B
                 </p>
             </section>
             <h2>Find me on</h2>
@@ -91,5 +104,15 @@
                 </article>
             </section>
         </div>
+        <script>
+        (function($$, $, forEach) {
+            forEach.call($$('.show'), function(v, i) {
+                v.addEventListener('click', function(evt) {
+                    var e = evt ? evt : window.event;
+                    $(e.target.getAttribute('href')).className = '';
+                }, false);
+            });
+        })(document.querySelectorAll.bind(document), document.querySelector.bind(document), Array.prototype.forEach);
+        </script>
     </body>
 </html>

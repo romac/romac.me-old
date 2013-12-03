@@ -1,3 +1,4 @@
+
 body {
                                 /* Background from http://subtlepatterns.com */
     background:                 #EFEFEF url( bg.png ) repeat top left;
@@ -38,6 +39,14 @@ a:hover {
 
 a, strong, h2, h3 {
     color:                      #365ABA;
+}
+
+.show {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
 }
 
 h1, h2, h3 {
@@ -84,7 +93,7 @@ section {
 }
 
 #container {
-    width:                      630px;
+    width:                      690px;
     margin:                     40px auto 0 auto;
 }
 
