@@ -1,3 +1,4 @@
+<!-- vim: set ts=4 sw=4: -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,8 +6,9 @@
         <meta charset="UTF-8" />
         <title>Romain Ruetschi</title>
         <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lekton:700&amp;v2" />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" media="all" href="styles.css" />
+        <!-- <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Lekton:700&amp;v2" /> -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" media="all" rel="stylesheet" />
     </head>
     <body>
         <div id="container">
@@ -16,19 +18,17 @@
             <h2>About me</h2>
             <section id="about-me">
                 <p>
-                    My name is <strong>Romain Ruetschi</strong>, also known as <strong>Romac</strong>.
+                    Hi, my name is <strong>Romain Ruetschi</strong>, or just <strong>Romac</strong>.
                 </p>
                 <p>
-                    I am a Master student in Computer Science at <a href="http://epfl.ch">EPFL</a> in Lausanne, Switzerland.
-
+		    I am a software engineer who strives to build correct and resilient software by standing on the shoulders of formal methods and programming language theory. I currently work at <a href="https://informal.systems">Informal Systems</a>. Before that, I used to work at the <a href="http://lara.epfl.ch">Laboratory for Automated Reasoning and Analysis</a> at <a href="http://epfl.ch">EPFL</a>.
                 </p>
                 <p>
-                  My main areas of interest are related to functional programming, type theory, compilers and formal verification of software.
-                  I like exploring these topics in Haskell, Scala, and Rust.
+                  My main areas of interest are related to formal verification of software, programming language theory, type theory, and compiler construction.
+                  I like exploring these topics in Rust, Scala and Haskell.
                 </p>
                 <p>
-                    You can reach me by <a href="mailto:romain.ruetschi@gmail.com">e-mail</a> (<a class="show" href="#pgp-key">PGP</a>),
-                    on <a href="https://twitter.com/_romac">Twitter</a>, or on <a href="https://keybase.io/romac">Keybase</a>.
+                    You can reach me on <a href="https://twitter.com/_romac">Twitter</a>, <a href="https://wire.com">Wire</a> (@romac), <a href="https://signal.org">Signal</a> (@romac), or via <a href="https://keybase.io/romac">Keybase</a>.
                 </p>
                 <p id="pgp-key" class="hide">
                   <strong><a href="/RomainRuetschi-C81484B9.asc">PGP Key</a> fingerprint</strong> (romain.ruetschi@gmail.com):<br />02A8 0B86 4B97 1E10 BDE3  EA5E 5122 3DE6 C814 84B9</p>
@@ -43,54 +43,115 @@
                 <span>·</span>
                 <a href="http://last.fm/user/romac17">Last.fm</a>
                 <span>·</span>
-                <a href="http://soundcloud.com/ro_mac">SoundCloud</a>
+                <a href="https://keybase.io/romac">Keybase</a>
             </section>
+            <h2>Talks</h2>
+            <div id="talks">
+                <section id="scala-romandie-2019">
+                    <h3>
+                        Formal verification of Scala programs with Stainless
+                    </h3>
+                    <p>
+                        — <a href="https://speakerdeck.com/romac/formal-verification-of-scala-programs-with-stainless-def0d4dd-5c8d-4640-ab8f-60887df0e18c">Slides</a>
+                        <br>
+                        @ <em><a href="https://www.meetup.com/Scala-Romandie/events/264920260/">Scala Romandie Meetup, Lausanne</a></em>, October 2019
+                    </p>
+                </section>
+                <section id="typelevel-summit-2019">
+                    <h3>
+                        Formal verification of Scala programs with Stainless
+                    </h3>
+                    <p>
+                        — <a href="https://www.youtube.com/watch?v=K1ZwpumSHCc">Video</a>
+                        — <a href="https://speakerdeck.com/romac/formal-verification-of-scala-programs-with-stainless">Slides</a>
+                        <br>
+                        @ <em><a href="https://typelevel.org/event/2019-06-summit-lausanne/">Typelevel Summit Lausanne</a></em>, June 2019
+                    </p>
+                </section>
+                <section>
+                    <h3>Refine your types!</h3>
+                    <p>
+                        — <a href="https://speakerdeck.com/romac/refine-your-types">Slides</a>
+                        <br>
+                        @ <em><a href="https://www.meetup.com/Formal-Methods-and-Verified-software-meetup">Formal Methods & Verified Software Meetup</a>, EPFL</em>, May 2018
+                    </p>
+                </section>
+                <section>
+                    <h3>Formal verification of Scala code with Leon</h3>
+                    <p>
+                        — <a href="https://speakerdeck.com/romac/formal-verification-in-scala-with-leon">Slides</a>
+                        <br>
+                        @ <em>Tokyo University</em>, August 2015
+                    </p>
+                </section>
+                <section>
+                    <h3>Rust Workshop</h3>
+                    <p>
+                        — <a href="https://hackepfl.github.io/rust-workshop-slides/slides.html#0">Slides</a>
+                        <br>
+                        + <a href="https://twitter.com/crackofdusk">Dimiter Petrov</a><br>
+                        @ <em>EPFL, Lausanne</em>, November 2014
+                    </p>
+                </section>
+            </div>
+
             <h2>Projects</h2>
-            <section id="projects">
-                <article id="merkle">
+            <div id="projects">
+                <section id="stainless">
+                    <h3>
+                      <a href="https://github.com/epfl-lara/stainless">Stainless</a>
+                    </h3>
+                    <p>
+                        I used to primarily contribute to Stainless, a verification framework for higher-order functional Scala programs developed at <a href="http://lara.epfl.ch/w/">LARA</a> at <a href="http://epfl.ch">EPFL</a>.
+                    </p>
+                </section>
+                <section id="oxid-light">
+                    <h3>
+                      <a href="https://github.com/romac/oxid-light">Oxid (light)</a>
+                    </h3>
+                    <p>
+                        Simple functional programming language with refinement types, powered by <a href="https://github.com/epfl-lara/inox">Inox</a>. Crafted for my <em>Refine your types!</em> (see above).
+                    </p>
+                </section>
+                <section id="rusty-secrets">
+                    <h3>
+                        <a href="https://github.com/SpinResearch/RustySecrets">RustySecrets</a>
+                    </h3>
+                    <p>
+                        Rust implementation of threshold Shamir's secret sharing.
+                    </p>
+                </section>
+                <section id="merkle">
                     <h3>
                         <a href="https://github.com/SpinResearch/merkle.rs">merkle.rs</a>
                     </h3>
                     <p>
-                    A Rust implementation of a <a href="https://en.wikipedia.org/wiki/Merkle_tree">Merkle tree</a>, based on <a href="https://github.com/briansmith/ring">ring</a>.
+                        Rust implementation of <a href="https://en.wikipedia.org/wiki/Merkle_tree">Merkle trees</a>.
                     </p>
-                </article>
-                <article id="stainless">
-                    <h3>
-                      <a href="http://stainless.epfl.ch/">stainless</a>
-                    </h3>
-                    <p>
-                    I am a contributor to Stainless, a verification framework for higher-order functional Scala programs developed at the <a href="http://lara.epfl.ch/w/">Laboratory for Automated Reasoning and Analysis<a> at <a href="http://epfl.ch">EPFL</a>.
-                    </p>
-                </article>
-                <article id="mdash">
+                </section>
+                <section id="mdash">
                     <h3>
                         <a href="https://romac.me/mdash/">mdash</a>
                     </h3>
                     <p>
                         mdash is a Chrome extension which replaces the New Tab page with a light dashboard linked with your bookmarks.
                     </p>
-                </article>
-                <article id="hackepfl">
+                </section>
+                <section id="hackepfl">
                     <h3>
                         <a href="https://romac.me/hackepfl-mirror/">Hackers at EPFL</a>
                     </h3>
                     <p>
-                        Hackers at EPFL was an association which aimed to promote the hacking culture and to foster innovation at <a href="http://epfl.ch">EPFL</a>.
+                        Hackers at EPFL was an association which aimed to promote the hacking culture at <a href="http://epfl.ch">EPFL</a>.
                     </p>
-                </article>
-            </section>
+                </section>
+                <div id="more">
+                    <p style="text-align: right">
+                        <a href="https://github.com/romac">More on GitHub...</a>
+                    </p>
+                </div>
+            </div>
         </div>
-        <script>
-        (function($$, $, forEach) {
-            forEach.call($$('.show'), function(v, i) {
-                v.addEventListener('click', function(evt) {
-                    var e = evt ? evt : window.event;
-                    $(e.target.getAttribute('href')).className = '';
-                }, false);
-            });
-        })(document.querySelectorAll.bind(document), document.querySelector.bind(document), Array.prototype.forEach);
-        </script>
     </body>
 </html>
 
